@@ -51,3 +51,11 @@ class Pracownik(Osoba):
 
     def czypracownik(self) -> bool:
         return True
+
+print("__________________________________________________")
+
+pr1 = Pracownik("Adam",34,87,180,"ABC","dyrektor",8,9800)
+pr1.print_osoba()
+pr1.print_pracownik()
+print(f"wiek za 10 lat: {pr1.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({pr1.czypracownik()})")
