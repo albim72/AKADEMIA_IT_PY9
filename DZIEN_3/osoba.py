@@ -91,3 +91,31 @@ class Student(Pracownik,Sport,Ekstra):
 
     def czypracownik(self) -> bool:
         return self.firma != ""
+
+    print("_______________________________________________")
+
+st1 = Student("Olaf",22,80,174,34534,"Budowlany","konstrukcja mostów",3)
+st1.print_osoba()
+st1.print_student()
+print(f"wiek za 10 lat: {st1.wiekza10lat()}")
+print(f"czy student jest pracownikiem? ({st1.czypracownik()})")
+
+print("_______________________________________________")
+
+st2 = Student("Olga",23,60,172,5353455,"Matematyki i Informatyki","Informatyka",4,
+              "XYZ","młodszy programista",1,3000)
+st2.print_osoba()
+st2.print_student()
+st2.print_pracownik()
+print(f"wiek za 10 lat: {st2.wiekza10lat()}")
+print(f"czy student jest pracownikiem? ({st2.czypracownik()})")
+
+print("_______________________________________________")
+
+st3 = Student("Robert",22,78,177,4354345,"Nauk Społecznych","Socjologia",3,
+              dyscyplina="ultra biegi",lata_upr=5,best_wynik="102km 18h 45min 5s")
+st3.print_osoba()
+st3.print_student()
+st3.inforsport()
+print(f"wiek za 10 lat: {st3.wiekza10lat()}")
+print(f"czy student jest pracownikiem? ({st3.czypracownik()})")
