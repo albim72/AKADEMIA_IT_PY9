@@ -1,0 +1,10 @@
+import xml.etree.ElementTree as ET
+
+tree = ET.parse("kraj.xml")
+root = tree.getroot()
+
+for child in root:
+    print(f"tag: {child.tag}, atrybuty: {child.attrib}")
+
+print(root[0][2])
+print(root[0][2].text)
