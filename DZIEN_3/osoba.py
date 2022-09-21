@@ -59,3 +59,16 @@ pr1.print_osoba()
 pr1.print_pracownik()
 print(f"wiek za 10 lat: {pr1.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({pr1.czypracownik()})")
+
+class Sport:
+    
+    def __init__(self,dyscyplina,lata_upr,best_wynik):
+        self.dyscyplina = dyscyplina
+        self.lata_upr = lata_upr
+        self.best_wynik = best_wynik
+        
+    def inforsport(self):
+        print(f"dysycyplina: {self.dyscyplina}, lata uprawiania: {self.lata_upr}, życiówka: {self.best_wynik}")
+        
+class Ekstra:
+    pass
