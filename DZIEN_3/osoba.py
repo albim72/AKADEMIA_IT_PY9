@@ -26,4 +26,11 @@ os1.print_osoba()
 print(f"wiek za 10 lat: {os1.wiekza10lat()}")
 print(f"czy osoba jest pracownikiem? ({os1.czypracownik()})")
 
+print("_________________________________________________")
+
+os2 = Osoba("Anna",32,56,166)
+os2.kolor_oczy = "niebieskie"
+os2.print_osoba()
+print(f"wiek za 10 lat: {os2.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({os2.czypracownik()})")
 
