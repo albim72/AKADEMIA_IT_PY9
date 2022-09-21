@@ -84,3 +84,10 @@ class Student(Pracownik,Sport,Ekstra):
         self.wydzial = wydzial
         self.kierunek = kierunek
         self.rok_stud = rok_stud
+
+     def print_student(self) -> None:
+        print(f"dane studenta nr  {self.nr_studenta}, wydział: {self.wydzial}, kierunek: {self.kierunek}, "
+              f"rok studiów: {self.rok_stud}")
+
+    def czypracownik(self) -> bool:
+        return self.firma != ""
