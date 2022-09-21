@@ -13,10 +13,17 @@ class Osoba:
 
     def print_osoba(self) -> None:
         print(f"osoba -> imię: {self.imie}, wiek: {self.wiek}, wzrost: {self.wzrost} cm,"
-              f" waga: {self.waga} kg")
+              f" waga: {self.waga} kg, kolor oczu: {self.kolor_oczy}")
 
     def wiekza10lat(self) -> int:
         return  self.wiek +10
 
     def czypracownik(self) -> bool:
         return False
+
+os1 = Osoba("Jan",45,102,173)
+os1.print_osoba()
+print(f"wiek za 10 lat: {os1.wiekza10lat()}")
+print(f"czy osoba jest pracownikiem? ({os1.czypracownik()})")
+
+
