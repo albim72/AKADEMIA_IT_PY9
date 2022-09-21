@@ -72,3 +72,15 @@ class Sport:
         
 class Ekstra:
     pass
+
+class Student(Pracownik,Sport,Ekstra):
+    
+    #konstruktor z dziedziczeniem
+    def __init__(self,imie,wiek,waga,wzrost,nr_studenta,wydzial,kierunek,rok_stud,
+                 firma="",stanowisko="",latapracy="",wynagrodzenie="",dyscyplina="",lata_upr="",best_wynik=""):
+        Pracownik.__init__(self,imie,wiek,waga,wzrost,firma,stanowisko,latapracy,wynagrodzenie)
+        Sport.__init__(self,dyscyplina,lata_upr,best_wynik)
+        self.nr_studenta = nr_studenta
+        self.wydzial = wydzial
+        self.kierunek = kierunek
+        self.rok_stud = rok_stud
